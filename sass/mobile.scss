@@ -1,0 +1,24 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	width: 100%;
+	height: 520px;
+}
+
+.summary-info__description {
+	padding: 0 20px 0 20px;
+}
+.summary-info__plan-charge {
+	width: 90%;
+	padding: 0 10px;
+}
+.price {
+	h3 {
+		font-size: 1rem;
+	}
+}
+
+.btn--proceed-order {
+	width: 270px;
+}
