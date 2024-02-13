@@ -37,7 +37,7 @@ body {
 }
 
 .summary-hero {
-  background-image: url(../../assets/icons/illustration-hero.svg);
+  background-image: url(../assets/icons/illustration-hero.svg);
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
