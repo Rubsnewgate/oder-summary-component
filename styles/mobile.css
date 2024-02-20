@@ -28,24 +28,31 @@ body {
 }
 .main-wrapper {
   width: 100%;
-  height: 520px;
 }
 
-.summary-info__description {
+.info__description {
   padding: 0 20px 0 20px;
 }
 
-.summary-info__plan-charge {
+.info__plan-charge {
   width: 90%;
   padding: 0 10px;
 }
 
-.price h3 {
-  font-size: 1rem;
+.price .plan-type {
+  font-size: 1.6rem;
+}
+
+.btns {
+  gap: 10px;
+}
+
+.btn {
+  width: 90%;
 }
 
 .btn--proceed-order {
-  width: 270px;
+  box-shadow: 0 4px 8px rgba(114, 128, 167, 0.3);
 }
 
 /*# sourceMappingURL=mobile.css.map */

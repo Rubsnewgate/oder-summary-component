@@ -12,23 +12,23 @@
 }
 
 // Summary Hero Section
-.summary-hero {
+.hero {
 	background-image: url(../assets/icons/illustration-hero.svg);
 	background-size: cover;
 	border-radius: 20px 20px 0 0;
 }
 
 // Summary Information Section
-.summary-info {
+.info {
 	@include flexbox(column, center, center, 20px);
 }
-.summary-info__title {
+.info__title {
 	margin: 0;
 	font-size: $lg-size;
 	font-weight: $black;
 	color: $dark-blue;
 }
-.summary-info__description {
+.info__description {
 	margin: 0;
 	padding: 0 50px 0 50px;
 	font-size: $sm-size;
@@ -36,7 +36,7 @@
 	text-align: center;
 	color: $desaturated-blue;
 }
-.summary-info__plan-charge {
+.info__plan-charge {
 	@include flexbox(row, space-between, center);
 	width: 85%;
 	height: 80px;
@@ -44,24 +44,24 @@
 	background-color: $very-pale-blue;
 	border-radius: 10px;
 }
-.plan-charge__price {
+.plan {
 	@include flexbox(row, center, center, 10px);
 }
 .price {
 	@include flexbox(column, center, start, 5px);
-	h3 {
+	.plan-type {
 		margin: 0;
 		font-size: $md-size;
 		font-weight: $black;
 		color: $dark-blue;
 	}
-	span {
+	.plan-price {
 		margin: 0;
 		font-size: $sm-size;
 		color: $desaturated-blue;
 	}
 }
-.change__plan {
+.change-plan {
 	font-size: $sm-size;
 	font-weight: $bold;
 	color: $dark-blue;
@@ -69,7 +69,7 @@
 }
 
 // Buttons Section
-.summary-btns {
+.btns {
 	@include flexbox(column, center, center, 20px);
 }
 .btn {

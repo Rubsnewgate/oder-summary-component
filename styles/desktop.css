@@ -36,13 +36,13 @@ body {
   border-radius: 20px;
 }
 
-.summary-hero {
+.hero {
   background-image: url(../assets/icons/illustration-hero.svg);
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
 
-.summary-info {
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,14 +50,14 @@ body {
   gap: 20px;
 }
 
-.summary-info__title {
+.info__title {
   margin: 0;
   font-size: 3rem;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
 
-.summary-info__description {
+.info__description {
   margin: 0;
   padding: 0 50px 0 50px;
   font-size: 1.6rem;
@@ -66,7 +66,7 @@ body {
   color: hsl(224, 23%, 55%);
 }
 
-.summary-info__plan-charge {
+.info__plan-charge {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -78,7 +78,7 @@ body {
   border-radius: 10px;
 }
 
-.plan-charge__price {
+.plan {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -93,26 +93,26 @@ body {
   align-items: start;
   gap: 5px;
 }
-.price h3 {
+.price .plan-type {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
-.price span {
+.price .plan-price {
   margin: 0;
   font-size: 1.6rem;
   color: hsl(224, 23%, 55%);
 }
 
-.change__plan {
+.change-plan {
   font-size: 1.6rem;
   font-weight: 700;
   color: hsl(223, 47%, 23%);
   text-decoration: none;
 }
 
-.summary-btns {
+.btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
