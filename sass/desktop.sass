@@ -1,0 +1,89 @@
+@use 'guide.sass'
+
+// main Container
+.main-wrapper
+	display: grid
+	grid-template-rows: 1.5fr 2fr 1fr
+	width: 400px
+	height: 580px
+	font-family: guide.$primary-font
+	background-color: white
+	border-radius: 20px
+
+// summary hero section
+.hero
+	background-image: url(../assets/icons/illustration-hero.svg)
+	background-size: cover
+	border-radius: 20px 20px 0 0
+
+// summary information section
+.info
+	@include guide.flexbox(column, center, center, 20px)
+
+.info__title
+	margin: 0
+	font-size: guide.$lg-size
+	font-weight: guide.$black
+	color: guide.$dark-blue
+
+.info__description
+	margin: 0
+	padding: 0 50px 0 50px
+	font-size: guide.$sm-size
+	font-weight: guide.$bold
+	text-align: center
+	color: guide.$desaturated-blue
+
+.info__plan-charge
+	@include guide.flexbox(row, space-between, center)
+	width: 85%
+	height: 80px
+	padding: 0 20px
+	background-color: guide.$very-pale-blue
+	border-radius: 10px
+
+.plan
+	@include guide.flexbox(row, center, center, 10px)
+
+.price
+	@include guide.flexbox(column, center, start, 5px)
+	.plan-type
+		margin: 0
+		font-size: guide.$md-size
+		font-weight: guide.$black
+		color: guide.$dark-blue
+
+	.plan-price
+		margin: 0
+		font-size: guide.$sm-size
+		color: guide.$desaturated-blue
+
+.change-plan
+	font-size: guide.$sm-size
+	font-weight: guide.$bold
+	color: guide.$dark-blue
+	text-decoration: none
+
+// buttons section
+.btns
+	@include guide.flexbox(column, center, center, 20px)
+
+.btn
+	width: 85%
+	height: 45px
+	padding: 10px
+	font-size: guide.$sm-size
+	font-weight: guide.$bold
+	border: none
+	border-radius: 10px
+	&:hover
+		cursor: pointer
+
+	&--proceed-order
+		color: guide.$very-pale-blue
+		background-color: guide.$bright-blue
+		box-shadow: 0 10px 8px rgba(114, 128, 167, 0.3)
+
+	&--cancel-order
+		color: guide.$desaturated-blue
+		background-color: white

@@ -1,0 +1,55 @@
+// primary Colors
+$pale-blue: hsl(225, 100%, 94%)
+$bright-blue: hsl(245, 75%, 52%)
+
+// neutral Colors
+$very-pale-blue: hsl(225, 100%, 98%)
+$desaturated-blue: hsl(224, 23%, 55%)
+$dark-blue: hsl(223, 47%, 23%)
+
+// typography
+$primary-font: 'Red Hat Display', sans-serif
+
+// font weights
+$medium: 500
+$bold: 700
+$black: 900
+
+// font sizes
+$sm-size: 1.6rem
+$md-size: 1.8rem
+$lg-size: 3rem
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	display: grid
+	place-content: center
+	width: 100%
+	min-height: 100vh
+	margin: 0
+	background-image: url(../../assets/icons/pattern-background-desktop.svg)
+	background-repeat: no-repeat
+	background-size: contain
+	background-color: $pale-blue
+
+// mixins
+@mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap
+
+// breakpoints
+@media screen and (max-width: 426px)
+	body
+		padding: 0 10px
+		background-image: url(../../assets/icons/pattern-background-mobile.svg)
+		background-repeat: no-repeat
+		background-size: contain
